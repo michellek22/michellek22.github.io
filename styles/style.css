@@ -1,41 +1,65 @@
-/* ==============
-   General Styles
-================= */
+/* ============================
+   Base Styles & Typography
+============================ */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #fff8f0;
+    color: #333;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
-/* ==============
-   Typography
-================= */
+/* ============================
+   Headings
+============================ */
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #4b2e1e;
+}
+
 h1 {
-    font-size: 2em;
-    font-family: 'Courier New', Courier, monospace;
-    color: blue;
-}
-
-h1.title {
-    color: brown;
-}
-
-h2.title {
-    font-size: 1.5em;
-    color: cadetblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-h2.subtitle {
-    color: darkslategray;
+    font-size: 2.5rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* ==============
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+/* Subtitle class for section titles */
+.subtitle {
+    color: #5c4033;
+    font-style: italic;
+}
+
+/* ============================
+   Paragraphs & Links
+============================ */
+p {
+    margin-bottom: 1em;
+    font-size: 1rem;
+}
+
+a {
+    color: #d2691e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ============================
    Navigation Bar
-================= */
+============================ */
 .navbar {
     background-color: #ffcc80;
     padding: 10px;
@@ -44,19 +68,18 @@ h2.subtitle {
 }
 
 .navbar a {
-    text-decoration: none;
     margin: 0 15px;
-    color: #333;
     font-weight: bold;
+    color: #333;
 }
 
 .navbar a:hover {
     color: #ff6600;
 }
 
-/* ==============
-   Centering Content
-================= */
+/* ============================
+   Content Wrapper
+============================ */
 .center-content {
     max-width: 900px;
     margin: 0 auto;
@@ -64,15 +87,15 @@ h2.subtitle {
     text-align: center;
 }
 
-/* ==============
+/* ============================
    Flexbox Layout
-================= */
+============================ */
 .flexbox-section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 2em 0;
 }
 
 .flexbox-item {
@@ -81,40 +104,50 @@ h2.subtitle {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
+    text-align: left;
 }
 
-/* ==============
-   Responsive Images
-================= */
+/* ============================
+   Images
+============================ */
 .responsive-img {
     max-width: 100%;
     height: auto;
+    border-radius: 6px;
 }
 
-/* ==============
+/* ============================
    Lists
-================= */
-#ingredients, #instructions {
-    text-align: left;
-    padding: 0 20px;
-}
-
+============================ */
 ul, ol {
-    padding-left: 20px;
-    margin-left: 20px;
+    padding-left: 30px;
+    text-align: left;
+    margin: 1em 0;
 }
 
 li {
     margin-bottom: 8px;
 }
 
-/* ==============
+/* ============================
+   Ingredients, Instructions
+============================ */
+#ingredients, #instructions {
+    text-align: left;
+    padding: 1em 1.5em;
+    background-color: #fff3e0;
+    border-radius: 8px;
+    margin: 2em 0;
+    border-left: 4px solid #f4a460;
+}
+
+/* ============================
    Table Styling
-================= */
+============================ */
 .table-container {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 2em 0;
 }
 
 table {
@@ -129,6 +162,7 @@ th, td {
     border: 1px solid #ddd;
     padding: 12px 15px;
     text-align: center;
+    font-size: 1rem;
 }
 
 th {
@@ -136,34 +170,20 @@ th {
     color: white;
 }
 
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-/* ==============
-   Borders, Margins, Padding
-================= */
-#ingredients {
-    border: 2px dashed #ffa726;
-    margin: 20px 0;
-    padding: 15px;
-}
-
-#instructions {
-    border: 1px solid #ccc;
-    padding: 20px;
-}
-
+/* ============================
+   Tips Section
+============================ */
 #tips {
-    background-color: #fff3e0;
-    border-left: 5px solid #f4a460;
+    background-color: #fff8e1;
+    border-left: 6px solid #ffc107;
     padding: 15px;
     margin-top: 30px;
+    font-style: italic;
 }
 
-/* ==============
+/* ============================
    Responsive Design
-================= */
+============================ */
 @media screen and (max-width: 768px) {
     .flexbox-section {
         flex-direction: column;
@@ -172,5 +192,13 @@ tr:nth-child(even) {
     .navbar {
         flex-direction: column;
         gap: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 }

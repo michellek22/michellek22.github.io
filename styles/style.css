@@ -51,11 +51,11 @@ body {
 ============================ */
 .hero-section {
     display: flex;
+    flex-direction: column; /* stack vertically */
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem 0.5rem;
+    gap: 0.3rem; /* reduce space between image and text */
     background-color: #fff0da;
     text-align: center;
 }

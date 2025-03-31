@@ -27,8 +27,23 @@ h1 {
     text-transform: uppercase;
 }
 
+/* Fun Title Underline for h2 */
 h2 {
     font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #ff8c42;
+    border-radius: 2px;
 }
 
 h3 {
@@ -67,7 +82,7 @@ a:hover {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    background-color: #ffe6b3; /* Buttery yellow */
+    background: linear-gradient(to right, #ffe6b3, #ffd6a0); /* Gradient */
     border-bottom: 3px solid #ffcc80;
     position: sticky;
     top: 0;
@@ -130,11 +145,12 @@ a:hover {
     border: 2px solid #ffdab9;
     border-radius: 12px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.06);
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .flexbox-item:hover {
-    transform: scale(1.02);
+    transform: rotate(-1deg) scale(1.02);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================

@@ -106,13 +106,26 @@ h3 {
     font-size: 1.4rem;
 }
 
-/* Subtitles (Not italic anymore) */
+/* Subtitle style */
 .subtitle {
     font-size: 1.2rem;
     font-style: normal;
     font-weight: bold;
     color: #5e412f;
     margin: 1rem 0 0.5rem;
+    text-align: center;
+}
+
+/* Custom style for About Pancakes heading */
+.about-title {
+    border: 2px solid #ffb347;
+    padding: 0.5rem 1rem;
+    background-color: #fff7ec;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 

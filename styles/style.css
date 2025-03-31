@@ -19,22 +19,20 @@ h1, h2, h3 {
     font-family: 'Courier New', Courier, monospace; /* Monospace headers */
     font-weight: bold;
     letter-spacing: 1px;
+    color: #5e412f; /* Rich brown */
 }
 
 h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: #ff8c42; /* Vibrant pancake orange */
 }
 
 h2 {
     font-size: 1.8rem;
-    color: #ffac33; /* Sunny yellow-orange */
 }
 
 h3 {
     font-size: 1.4rem;
-    color: #ffa07a; /* Light coral */
 }
 
 .subtitle {

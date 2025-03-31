@@ -1,53 +1,46 @@
-h1{
-    font-size: larger;
-    font-style: normal
-    color: blue;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-h1.title
-{
-    color:brown
-}
-h2.title {
-    font-size: medium;
-    color: cadetblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-#main {
-    background-color: antiquewhite;
-    width: 600px;
-    height: 100px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-    font-size: small;
-}
-
+/* ==============
+   General Styles
+================= */
 body {
     font-family: Arial, sans-serif;
+    background-color: #fff8f0;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff8f0;
 }
 
-.center-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+/* ==============
+   Typography
+================= */
+h1 {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
 }
 
-.title {
-    color: #d2691e;
-    margin-top: 20px;
+h1.title {
+    color: brown;
 }
 
+h2.title {
+    font-size: 1.5em;
+    color: cadetblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2.subtitle {
+    color: darkslategray;
+    text-transform: uppercase;
+}
+
+/* ==============
+   Navigation Bar
+================= */
 .navbar {
     background-color: #ffcc80;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar a {
@@ -61,36 +54,46 @@ body {
     color: #ff6600;
 }
 
-.table-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-table {
-    border-collapse: collapse;
-    width: 60%;
-    max-width: 500px;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-table th,
-table td {
-    border: 1px solid #ddd;
-    padding: 12px 15px;
+/* ==============
+   Centering Content
+================= */
+.center-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
 }
 
-table th {
-    background-color: #f4a460;
-    color: white;
+/* ==============
+   Flexbox Layout
+================= */
+.flexbox-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+.flexbox-item {
+    flex: 1 1 300px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
+/* ==============
+   Responsive Images
+================= */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==============
+   Lists
+================= */
 #ingredients, #instructions {
     text-align: left;
     padding: 0 20px;
@@ -101,7 +104,73 @@ ul, ol {
     margin-left: 20px;
 }
 
-ul li, ol li {
+li {
     margin-bottom: 8px;
-    line-height: 1.5;
+}
+
+/* ==============
+   Table Styling
+================= */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4a460;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ==============
+   Borders, Margins, Padding
+================= */
+#ingredients {
+    border: 2px dashed #ffa726;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+#instructions {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+#tips {
+    background-color: #fff3e0;
+    border-left: 5px solid #f4a460;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* ==============
+   Responsive Design
+================= */
+@media screen and (max-width: 768px) {
+    .flexbox-section {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

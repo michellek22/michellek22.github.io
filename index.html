@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-    <head> 
-        <link rel="stylesheet" href="./styles/style.css">
+<head>
+    <title>Web Comm Lab</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
 
-        <title>Web Comm Lab 
-        </title>
-    </head>
-    <body>
+<body>
 
-        <!-- Navigation Bar -->
-<nav class="navbar">
-    <a href="#main">About</a>
-    <a href="#ingredients">Ingredients</a>
-    <a href="#instructions">Instructions</a>
-    <a href="#nutrition">Nutrition</a>
-  </nav>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#ingredients">Ingredients</a>
+        <a href="#instructions">Instructions</a>
+        <a href="#nutrition">Nutrition</a>
+    </nav>
 
-
-           <!-- Main Wrapper -->
+    <!-- Main Wrapper -->
     <div class="center-content">
+
         <h1 class="title">PANCAKES</h1>
         <h2 class="title">Easy Pancake Recipe</h2>
 
@@ -29,55 +28,50 @@
                 Pancakes are one of the world's most beloved and versatile breakfast dishes. Soft, warm, and often
                 served with a drizzle of syrup, a pat of butter, or a handful of fruits, pancakes have become a comfort
                 food staple in many households. But did you know that pancakes have been around for thousands of years?
-                The word “pancake” itself first appeared in English in the 15th century.
             </p>
-            <h2 class="title">Perfect for Breakfast</h2>
+            <h2 class="subtitle">Perfect for Breakfast</h2>
             <p>
-                There’s nothing like waking up to the smell of freshly made pancakes. Whether you’re cooking for
-                yourself, your family, or trying to impress someone special, pancakes are a warm, cozy classic that
-                never fail. Enjoy soft and fluffy pancakes with this recipe! Great for a quick and tasty breakfast.
+                Whether you’re cooking for yourself or others, pancakes are a warm, cozy classic. Enjoy soft and fluffy pancakes with this recipe!
             </p>
         </div>
 
-        <!-- Image -->
-        <div>
-            <img src="pancakes.jpg" alt="Stack of pancakes with syrup" width="300">
-        </div>
+        <!-- Flexbox Layout with Image and Ingredients -->
+        <div class="flexbox-section">
+            <!-- Image -->
+            <div class="flexbox-item">
+                <img src="pancakes.jpg" alt="Stack of pancakes with syrup" class="responsive-img">
+            </div>
 
-        <!-- Ingredients Section -->
-        <div id="ingredients">
-            <h2>List of Ingredients</h2>
-            <ul>
-                <li>1 cup all-purpose flour</li>
-                <li>2 tablespoons sugar</li>
-                <li>1 teaspoon baking powder</li>
-                <li>1/2 teaspoon baking soda</li>
-                <li>1/4 teaspoon salt</li>
-                <li>3/4 cup milk</li>
-                <li>1 egg</li>
-                <li>2 tablespoons melted butter</li>
-                <li>1 teaspoon vanilla extract</li>
-            </ul>
+            <!-- Ingredients Section -->
+            <div id="ingredients" class="flexbox-item">
+                <h2>List of Ingredients</h2>
+                <ul>
+                    <li>1 cup all-purpose flour</li>
+                    <li>2 tablespoons sugar</li>
+                    <li>1 teaspoon baking powder</li>
+                    <li>1/2 teaspoon baking soda</li>
+                    <li>1/4 teaspoon salt</li>
+                    <li>3/4 cup milk</li>
+                    <li>1 egg</li>
+                    <li>2 tablespoons melted butter</li>
+                    <li>1 teaspoon vanilla extract</li>
+                </ul>
+            </div>
         </div>
 
         <!-- Instructions Section -->
         <div id="instructions">
             <h2>Instructions</h2>
             <ol>
-                <li>In a bowl, mix the <span>flour</span>, <span>sugar</span>, <span>baking powder</span>,
-                    <span>baking soda</span>, and <span>salt</span>.</li>
-                <li>In another bowl, whisk the <span>milk</span>, <span>egg</span>, <span>melted butter</span>, and
-                    <span>vanilla</span>.</li>
-                <li>Pour the wet ingredients into the dry ingredients and stir until combined.</li>
-                <li>Heat a pan over medium heat and lightly grease it.</li>
-                <li>Pour 1/4 cup of batter onto the pan for each pancake.</li>
-                <li>Cook until bubbles form on the surface, then flip and cook the other side.</li>
-                <li>Serve warm with syrup and toppings of your choice!</li>
+                <li>Mix the <span>flour</span>, <span>sugar</span>, <span>baking powder</span>, <span>baking soda</span>, and <span>salt</span>.</li>
+                <li>In another bowl, whisk the <span>milk</span>, <span>egg</span>, <span>melted butter</span>, and <span>vanilla</span>.</li>
+                <li>Combine wet and dry ingredients.</li>
+                <li>Heat a pan and lightly grease it.</li>
+                <li>Pour 1/4 cup of batter for each pancake.</li>
+                <li>Cook until bubbles form, flip, and cook the other side.</li>
+                <li>Serve warm with syrup or toppings.</li>
             </ol>
         </div>
-
-
-        
 
         <!-- Nutrition Section -->
         <div id="nutrition">
@@ -98,19 +92,17 @@
             </div>
         </div>
 
-        <!-- Tips -->
-        <div>
-            <h2 id="tips">Tips for Perfect Pancakes</h2>
-            <p>For extra fluffy pancakes, do not overmix the batter. Let it rest for 5 minutes before cooking.</p>
+        <!-- Tips Section -->
+        <div id="tips">
+            <h2>Tips for Perfect Pancakes</h2>
+            <p>Don't overmix your batter! Let it rest 5 minutes before cooking for fluffier results.</p>
         </div>
 
         <!-- External Link -->
         <div>
-            <p>Want more recipes? <a href="https://www.allrecipes.com/recipe/162760/fluffy-pancakes/" target="_blank">Click
-                    here</a> to learn more about making your own fluffy pancakes.</p>
+            <p>Want more recipes? <a href="https://www.allrecipes.com/recipe/162760/fluffy-pancakes/" target="_blank">Click here</a> for more pancake goodness.</p>
         </div>
+
     </div>
-
 </body>
-
 </html>

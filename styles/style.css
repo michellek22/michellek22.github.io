@@ -23,3 +23,40 @@ h2.title {
     font-family:Verdana, Geneva, Tahoma, sans-serif
     font-size: small;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+}
+
+.center-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: #d2691e;
+    margin-top: 20px;
+}
+
+.navbar {
+    background-color: #ffcc80;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff6600;
+}

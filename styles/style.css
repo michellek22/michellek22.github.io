@@ -2,8 +2,8 @@
    Base & Typography
 ============================ */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0; /* Light cream background */
     color: #222;
     line-height: 1.6;
     margin: 0;
@@ -14,27 +14,30 @@ body {
    Headings
 ============================ */
 h1, h2, h3 {
-    font-family: 'Georgia', serif;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    color: #333;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 h1 {
     font-size: 2.2rem;
+    color: #d2691e; /* Burnt orange */
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 h2 {
     font-size: 1.6rem;
+    color: #4b4b4b; /* Dark gray */
 }
 
 h3 {
     font-size: 1.3rem;
+    color: #6b6b6b;
 }
 
 .subtitle {
-    color: #666;
+    color: #777;
     font-style: italic;
     font-size: 1.2rem;
 }
@@ -48,7 +51,7 @@ p {
 }
 
 a {
-    color: #444;
+    color: #d2691e;
     text-decoration: underline;
 }
 
@@ -63,23 +66,23 @@ a:hover {
     display: flex;
     justify-content: center;
     padding: 1rem;
+    background-color: #ffe6cc; /* Light orange */
     border-bottom: 1px solid #e0e0e0;
-    background-color: #fafafa;
 }
 
 .navbar a {
     margin: 0 12px;
-    font-weight: 500;
-    color: #222;
+    font-weight: bold;
+    color: #333;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #555;
+    color: #d2691e;
 }
 
 /* ============================
-   Layout Container
+   Main Content Wrapper
 ============================ */
 .center-content {
     max-width: 800px;
@@ -89,7 +92,7 @@ a:hover {
 }
 
 /* ============================
-   Flexbox Layout
+   Flexbox Section
 ============================ */
 .flexbox-section {
     display: flex;
@@ -118,7 +121,7 @@ a:hover {
 }
 
 /* ============================
-   Lists
+   List Styling
 ============================ */
 ul, ol {
     padding-left: 1.5rem;
@@ -131,7 +134,7 @@ li {
 }
 
 /* ============================
-   Sections
+   Section Blocks
 ============================ */
 #ingredients, #instructions {
     padding: 1.5rem;
@@ -156,6 +159,7 @@ table {
     width: 100%;
     max-width: 500px;
     font-size: 0.95rem;
+    background-color: #fff;
 }
 
 th, td {
@@ -165,19 +169,20 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
-    font-weight: 600;
+    background-color: #f4a460;
+    color: white;
+    font-weight: bold;
 }
 
 /* ============================
    Tips Section
 ============================ */
 #tips {
-    border-left: 3px solid #ccc;
+    border-left: 3px solid #d2691e;
     padding: 1rem;
     margin-top: 2rem;
     font-style: italic;
-    background-color: #f9f9f9;
+    background-color: #fff6ee;
 }
 
 /* ============================

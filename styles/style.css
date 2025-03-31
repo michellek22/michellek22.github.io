@@ -1,13 +1,13 @@
 /* ============================
-   Base & Typography
+   Global Styles & Typography
 ============================ */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fffaf0; /* Light cream background */
-    color: #222;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8ed; /* Warm light cream */
+    color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 /* ============================
@@ -17,27 +17,28 @@ h1, h2, h3 {
     margin-top: 1.5em;
     margin-bottom: 0.5em;
     font-weight: bold;
-}
-
-h1 {
-    font-size: 2.2rem;
-    color: #d2691e; /* Burnt orange */
-    text-transform: uppercase;
+    font-family: 'Arial Black', Arial, sans-serif;
     letter-spacing: 1px;
 }
 
+h1 {
+    font-size: 2.5rem;
+    color: #ff8c42; /* vibrant pancake orange */
+    text-transform: uppercase;
+}
+
 h2 {
-    font-size: 1.6rem;
-    color: #4b4b4b; /* Dark gray */
+    font-size: 1.8rem;
+    color: #ffac33; /* sunny yellow-orange */
 }
 
 h3 {
-    font-size: 1.3rem;
-    color: #6b6b6b;
+    font-size: 1.4rem;
+    color: #ffa07a; /* light coral */
 }
 
 .subtitle {
-    color: #777;
+    color: #666;
     font-style: italic;
     font-size: 1.2rem;
 }
@@ -51,12 +52,14 @@ p {
 }
 
 a {
-    color: #d2691e;
-    text-decoration: underline;
+    color: #ff8c42;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #000;
+    color: #e85d04;
+    text-decoration: underline;
 }
 
 /* ============================
@@ -66,26 +69,33 @@ a:hover {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    background-color: #ffe6cc; /* Light orange */
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffe6b3; /* buttery yellow */
+    border-bottom: 3px solid #ffcc80;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar a {
-    margin: 0 12px;
+    margin: 0 15px;
     font-weight: bold;
+    font-size: 1rem;
     color: #333;
-    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #d2691e;
+    background-color: #ffcc80;
+    color: #000;
 }
 
 /* ============================
-   Main Content Wrapper
+   Main Container
 ============================ */
 .center-content {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
     text-align: center;
@@ -104,11 +114,17 @@ a:hover {
 
 .flexbox-item {
     flex: 1 1 300px;
-    padding: 1rem;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    background-color: #fafafa;
+    padding: 1.5rem;
+    border: 2px solid #ffdab9;
+    border-radius: 12px;
+    background-color: #fffaf4;
     text-align: left;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+}
+
+.flexbox-item:hover {
+    transform: scale(1.02);
 }
 
 /* ============================
@@ -117,7 +133,7 @@ a:hover {
 .responsive-img {
     max-width: 100%;
     height: auto;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 /* ============================
@@ -131,16 +147,17 @@ ul, ol {
 
 li {
     margin-bottom: 0.5em;
+    font-size: 1rem;
 }
 
 /* ============================
    Ingredients Section
 ============================ */
 #ingredients {
-    padding: 1.5rem;
-    background-color: #fff1dc; /* light peach/cream tone */
-    border: 1px solid #f4d8a3;
-    border-radius: 6px;
+    padding: 2rem;
+    background-color: #fff0da;
+    border: 2px dashed #ffb347;
+    border-radius: 12px;
     margin: 2em 0;
     text-align: left;
 }
@@ -149,10 +166,10 @@ li {
    Instructions Section
 ============================ */
 #instructions {
-    padding: 1.5rem;
-    background-color: #fef5e6; /* another light tone */
-    border: 1px solid #eccfa1;
-    border-radius: 6px;
+    padding: 2rem;
+    background-color: #ffe8d1;
+    border: 2px dashed #ffa07a;
+    border-radius: 12px;
     margin: 2em 0;
     text-align: left;
 }
@@ -172,33 +189,36 @@ table {
     max-width: 500px;
     font-size: 0.95rem;
     background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
+    border: 1px solid #ffdab9;
+    padding: 12px;
     text-align: center;
 }
 
 th {
-    background-color: #f4a460;
-    color: white;
-    font-weight: bold;
+    background-color: #ffb347;
+    color: #fff;
 }
 
 /* ============================
    Tips Section
 ============================ */
 #tips {
-    border-left: 3px solid #d2691e;
-    padding: 1rem;
+    background-color: #fff2dc;
+    border-left: 6px solid #f4a460;
+    padding: 1.5rem;
     margin-top: 2rem;
     font-style: italic;
-    background-color: #fff6ee;
+    border-radius: 8px;
 }
 
 /* ============================
-   Responsive Design
+   Responsive
 ============================ */
 @media screen and (max-width: 768px) {
     .flexbox-section {
@@ -211,10 +231,10 @@ th {
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 }

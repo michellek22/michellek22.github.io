@@ -106,7 +106,6 @@ h3 {
     font-size: 1.4rem;
 }
 
-/* Subtitles */
 .subtitle {
     font-size: 1.2rem;
     font-style: normal;
@@ -116,7 +115,9 @@ h3 {
     text-align: center;
 }
 
-/* About section title */
+/* ============================
+   Custom Titles
+============================ */
 .about-title {
     border: 2px solid #ffb347;
     padding: 0.5rem 1rem;
@@ -127,6 +128,19 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+.perfect-title {
+    background-color: #fff1d8;
+    padding: 0.75rem 1.2rem;
+    border-left: 6px solid #f4a460;
+    border-radius: 8px;
+    font-size: 2rem;
+    color: #d35400;
+    margin: 2rem auto 1rem;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(244, 164, 96, 0.3);
 }
 
 /* ============================

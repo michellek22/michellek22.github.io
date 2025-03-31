@@ -106,7 +106,7 @@ h3 {
     font-size: 1.4rem;
 }
 
-/* Subtitle style */
+/* Subtitles */
 .subtitle {
     font-size: 1.2rem;
     font-style: normal;
@@ -116,7 +116,7 @@ h3 {
     text-align: center;
 }
 
-/* Custom style for About Pancakes heading */
+/* About section title */
 .about-title {
     border: 2px solid #ffb347;
     padding: 0.5rem 1rem;
@@ -211,6 +211,29 @@ li {
 }
 
 /* ============================
+   Tips Section
+============================ */
+#tips {
+    background-color: #fff7e6;
+    border: 2px solid #f4a460;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-style: normal;
+    font-size: 1rem;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+#tips:hover {
+    transform: scale(1.01);
+}
+
+#tips p strong {
+    color: #c65f00;
+}
+
+/* ============================
    Nutrition Table
 ============================ */
 .table-container {
@@ -239,18 +262,6 @@ th, td {
 th {
     background-color: #ffb347;
     color: #fff;
-}
-
-/* ============================
-   Tips Section
-============================ */
-#tips {
-    background-color: #fff2dc;
-    border-left: 6px solid #f4a460;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    font-style: italic;
-    border-radius: 8px;
 }
 
 /* ============================

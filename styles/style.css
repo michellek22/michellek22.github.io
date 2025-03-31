@@ -16,28 +16,34 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 1rem;
     background: linear-gradient(to right, #ffe6b3, #ffd6a0);
     border-bottom: 3px solid #ffcc80;
     position: sticky;
     top: 0;
     z-index: 1000;
+    gap: 10px;
 }
 
 .navbar a {
-    margin: 0 15px;
-    padding: 8px 12px;
+    margin: 0 8px;
+    padding: 8px 16px;
     font-size: 1rem;
     font-weight: bold;
-    color: #333;
+    color: #5e412f;
+    border: 2px solid #ffb347;
     border-radius: 8px;
+    background-color: #fff7ec;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
 }
 
 .navbar a:hover {
     background-color: #ffcc80;
     color: #000;
+    transform: scale(1.05);
 }
 
 /* ============================

@@ -8,12 +8,12 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
-
-/* ============================
-   Navigation Bar
-============================ */
-.navbar {
+  }
+  
+  /* ============================
+     Navigation Bar
+  ============================ */
+  .navbar {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -24,9 +24,9 @@ body {
     top: 0;
     z-index: 1000;
     gap: 10px;
-}
-
-.navbar a {
+  }
+  
+  .navbar a {
     margin: 0 8px;
     padding: 8px 16px;
     font-size: 1rem;
@@ -38,67 +38,68 @@ body {
     text-decoration: none;
     transition: background 0.3s ease, transform 0.2s ease;
     display: inline-block;
-}
-
-.navbar a:hover {
+  }
+  
+  .navbar a:hover {
     background-color: #ffcc80;
     color: #000;
     transform: scale(1.05);
-}
-
-/* ============================
-   Hero Section (Flexbox)
-============================ */
-.hero-section {
+  }
+  
+  /* ============================
+     Hero Section with Background Image
+  ============================ */
+  .hero-section {
+    background-image: url("pancakes 2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
     display: flex;
-    flex-direction: column; /* stack vertically */
     align-items: center;
     justify-content: center;
-    padding: 1rem 1rem 0.5rem;
-    gap: 0.3rem; /* reduce space between image and text */
-    background-color: #fff0da;
+    position: relative;
     text-align: center;
-}
-
-.hero-text {
-    flex: 1 1 300px;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* move content downward */
-    align-items: center;
-    gap: 0.2rem; /* tighter spacing */
-    padding: 0;
-    text-align: center;
-    margin-bottom: -1rem; /* pulls it closer to the image */
-}
-
-.hero-image {
-    flex: 1 1 300px;
-    display: flex;
-    justify-content: center;
-}
-
-.hero-img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 12px;
-}
-
-/* ============================
-   Headings
-============================ */
-h1 {
+  }
+  
+  /* Optional dark overlay for readability */
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .hero-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 1rem 2rem;
+  }
+  
+  /* PANCAKES title */
+  h1.title {
     font-size: 5rem;
+    margin: 0;
+    color: #fff8ed;
     text-transform: uppercase;
-    margin: 0.3rem 0 0.2rem 0;
-    line-height: 1;
-    color: #5e412f;
     font-family: 'Courier New', Courier, monospace;
-}
-
-h2 {
+  }
+  
+  /* Subtitle under title */
+  .subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #fff8ed;
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* ============================
+     Headings
+  ============================ */
+  h2 {
     font-size: 1.8rem;
     font-family: 'Courier New', Courier, monospace;
     color: #5e412f;
@@ -106,30 +107,20 @@ h2 {
     letter-spacing: 1px;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-}
-
-h3 {
+  }
+  
+  h3 {
     font-size: 1.4rem;
     font-family: 'Courier New', Courier, monospace;
     color: #5e412f;
     font-weight: bold;
     letter-spacing: 1px;
-}
-
-.subtitle {
-    font-size: 1rem;
-    font-weight: normal;
-    color: #888;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-style: italic;
-    text-align: center;
-}
-
-/* ============================
-   Custom Titles
-============================ */
-.about-title {
+  }
+  
+  /* ============================
+     Custom Titles
+  ============================ */
+  .about-title {
     border: 2px solid #ffb347;
     padding: 0.5rem 1rem;
     background-color: #fff7ec;
@@ -139,9 +130,9 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-
-.perfect-title {
+  }
+  
+  .perfect-title {
     background-color: #fff1d8;
     padding: 0.75rem 1.2rem;
     border-left: 6px solid #f4a460;
@@ -152,30 +143,30 @@ h3 {
     display: inline-block;
     text-align: center;
     box-shadow: 2px 2px 8px rgba(244, 164, 96, 0.3);
-}
-
-/* ============================
-   Content Wrapper
-============================ */
-.center-content {
+  }
+  
+  /* ============================
+     Content Wrapper
+  ============================ */
+  .center-content {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
     text-align: center;
-}
-
-/* ============================
-   Flexbox Section
-============================ */
-.flexbox-section {
+  }
+  
+  /* ============================
+     Flexbox Section
+  ============================ */
+  .flexbox-section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-between;
     margin: 2em 0;
-}
-
-.flexbox-item {
+  }
+  
+  .flexbox-item {
     flex: 1 1 300px;
     padding: 1.5rem;
     background-color: #fffaf4;
@@ -184,61 +175,61 @@ h3 {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.06);
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.flexbox-item:hover {
+  }
+  
+  .flexbox-item:hover {
     transform: rotate(-1deg) scale(1.02);
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* ============================
-   Responsive Images
-============================ */
-.responsive-img {
+  }
+  
+  /* ============================
+     Images
+  ============================ */
+  .responsive-img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-/* ============================
-   Lists
-============================ */
-ul, ol {
+  }
+  
+  /* ============================
+     Lists
+  ============================ */
+  ul, ol {
     padding-left: 1.5rem;
     margin: 1em 0;
     text-align: left;
-}
-
-li {
+  }
+  
+  li {
     margin-bottom: 0.5em;
     font-size: 1rem;
-}
-
-/* ============================
-   Ingredients Section
-============================ */
-#ingredients {
+  }
+  
+  /* ============================
+     Ingredients Section
+  ============================ */
+  #ingredients {
     background-color: #fff0da;
     border: 2px dashed #ffb347;
     border-radius: 12px;
-}
-
-/* ============================
-   Instructions Section
-============================ */
-#instructions {
+  }
+  
+  /* ============================
+     Instructions Section
+  ============================ */
+  #instructions {
     background-color: #ffe8d1;
     border: 2px dashed #ffa07a;
     padding: 2rem;
     margin: 2em 0;
     border-radius: 12px;
     text-align: left;
-}
-
-/* ============================
-   Tips Section
-============================ */
-#tips {
+  }
+  
+  /* ============================
+     Tips Section
+  ============================ */
+  #tips {
     background-color: #fff7e6;
     border: 2px solid #f4a460;
     padding: 1.5rem;
@@ -248,26 +239,26 @@ li {
     border-radius: 12px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-}
-
-#tips:hover {
+  }
+  
+  #tips:hover {
     transform: scale(1.01);
-}
-
-#tips p strong {
+  }
+  
+  #tips p strong {
     color: #c65f00;
-}
-
-/* ============================
-   Nutrition Table
-============================ */
-.table-container {
+  }
+  
+  /* ============================
+     Nutrition Table
+  ============================ */
+  .table-container {
     display: flex;
     justify-content: center;
     margin: 2em 0;
-}
-
-table {
+  }
+  
+  table {
     width: 100%;
     max-width: 500px;
     border-collapse: collapse;
@@ -276,43 +267,43 @@ table {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-th, td {
+  }
+  
+  th, td {
     padding: 12px;
     text-align: center;
     border: 1px solid #ffdab9;
-}
-
-th {
+  }
+  
+  th {
     background-color: #ffb347;
     color: #fff;
-}
-
-/* ============================
-   Responsive Design
-============================ */
-@media screen and (max-width: 768px) {
+  }
+  
+  /* ============================
+     Responsive Design
+  ============================ */
+  @media screen and (max-width: 768px) {
     .flexbox-section,
     .hero-section {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
-
+  
     .navbar {
-        flex-direction: column;
-        gap: 10px;
+      flex-direction: column;
+      gap: 10px;
     }
-
-    h1 {
-        font-size: 3rem;
+  
+    h1.title {
+      font-size: 3rem;
     }
-
+  
     h2 {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-
-    .hero-text {
-        align-items: center;
+  
+    .hero-overlay {
+      padding: 1rem;
     }
-}
+  }

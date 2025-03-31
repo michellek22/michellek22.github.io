@@ -134,15 +134,27 @@ li {
 }
 
 /* ============================
-   Section Blocks
+   Ingredients Section
 ============================ */
-#ingredients, #instructions {
+#ingredients {
     padding: 1.5rem;
-    border: 1px solid #eee;
+    background-color: #fff1dc; /* light peach/cream tone */
+    border: 1px solid #f4d8a3;
     border-radius: 6px;
     margin: 2em 0;
     text-align: left;
-    background-color: #fcfcfc;
+}
+
+/* ============================
+   Instructions Section
+============================ */
+#instructions {
+    padding: 1.5rem;
+    background-color: #fef5e6; /* another light tone */
+    border: 1px solid #eccfa1;
+    border-radius: 6px;
+    margin: 2em 0;
+    text-align: left;
 }
 
 /* ============================

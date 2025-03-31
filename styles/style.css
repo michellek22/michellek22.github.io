@@ -90,3 +90,18 @@ table th {
 table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+
+#ingredients, #instructions {
+    text-align: left;
+    padding: 0 20px;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}

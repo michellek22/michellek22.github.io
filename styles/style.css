@@ -1,63 +1,13 @@
 /* ============================
-   Global Styles & Typography
+   Global Styles
 ============================ */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff8ed; /* Warm light cream */
+    font-family: Arial, sans-serif;
+    background-color: #fff8ed;
     color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
-
-/* ============================
-   Headings
-============================ */
-h1, h2, h3 {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    font-family: 'Courier New', Courier, monospace; /* Monospace headers */
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #5e412f; /* Rich brown */
-}
-
-h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 1.8rem;
-}
-
-h3 {
-    font-size: 1.4rem;
-}
-
-.subtitle {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #666;
-}
-
-/* ============================
-   Paragraphs & Links
-============================ */
-p {
-    font-size: 1rem;
-    margin-bottom: 1em;
-}
-
-a {
-    color: #ff8c42;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #e85d04;
-    text-decoration: underline;
 }
 
 /* ============================
@@ -67,7 +17,7 @@ a:hover {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    background-color: #ffe6b3; /* Buttery yellow */
+    background: linear-gradient(to right, #ffe6b3, #ffd6a0);
     border-bottom: 3px solid #ffcc80;
     position: sticky;
     top: 0;
@@ -81,6 +31,7 @@ a:hover {
     font-weight: bold;
     color: #333;
     border-radius: 8px;
+    text-decoration: none;
     transition: background 0.3s ease;
 }
 
@@ -90,25 +41,90 @@ a:hover {
 }
 
 /* ============================
-   Main Content Wrapper
+   Hero Section (Flexbox)
+============================ */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: #fff0da;
+    text-align: left;
+}
+
+.hero-text {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.hero-image {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ============================
+   Headings
+============================ */
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #5e412f;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #ff8c42;
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+}
+
+/* ============================
+   Content Wrapper
 ============================ */
 .center-content {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
     text-align: center;
-}
-
-/* ============================
-   Hero Image
-============================ */
-.hero-img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 2rem auto;
-    border-radius: 12px;
 }
 
 /* ============================
@@ -125,20 +141,21 @@ a:hover {
 .flexbox-item {
     flex: 1 1 300px;
     padding: 1.5rem;
-    text-align: left;
     background-color: #fffaf4;
     border: 2px solid #ffdab9;
     border-radius: 12px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.06);
-    transition: transform 0.2s ease;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .flexbox-item:hover {
-    transform: scale(1.02);
+    transform: rotate(-1deg) scale(1.02);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================
-   Responsive Images
+   Images
 ============================ */
 .responsive-img {
     max-width: 100%;
@@ -147,7 +164,7 @@ a:hover {
 }
 
 /* ============================
-   List Styling
+   Lists
 ============================ */
 ul, ol {
     padding-left: 1.5rem;
@@ -164,9 +181,6 @@ li {
    Ingredients Section
 ============================ */
 #ingredients {
-    padding: 2rem;
-    margin: 2em 0;
-    text-align: left;
     background-color: #fff0da;
     border: 2px dashed #ffb347;
     border-radius: 12px;
@@ -176,12 +190,12 @@ li {
    Instructions Section
 ============================ */
 #instructions {
-    padding: 2rem;
-    margin: 2em 0;
-    text-align: left;
     background-color: #ffe8d1;
     border: 2px dashed #ffa07a;
+    padding: 2rem;
+    margin: 2em 0;
     border-radius: 12px;
+    text-align: left;
 }
 
 /* ============================
@@ -196,9 +210,9 @@ li {
 table {
     width: 100%;
     max-width: 500px;
-    font-size: 0.95rem;
     border-collapse: collapse;
     background-color: #fff;
+    font-size: 0.95rem;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -219,11 +233,11 @@ th {
    Tips Section
 ============================ */
 #tips {
+    background-color: #fff2dc;
+    border-left: 6px solid #f4a460;
     padding: 1.5rem;
     margin-top: 2rem;
     font-style: italic;
-    background-color: #fff2dc;
-    border-left: 6px solid #f4a460;
     border-radius: 8px;
 }
 
@@ -231,8 +245,10 @@ th {
    Responsive Design
 ============================ */
 @media screen and (max-width: 768px) {
-    .flexbox-section {
+    .flexbox-section,
+    .hero-section {
         flex-direction: column;
+        text-align: center;
     }
 
     .navbar {
@@ -246,5 +262,9 @@ th {
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    .hero-text {
+        align-items: center;
     }
 }

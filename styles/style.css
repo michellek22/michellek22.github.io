@@ -1,10 +1,10 @@
 /* ============================
-   Base Styles & Typography
+   Base & Typography
 ============================ */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff8f0;
-    color: #333;
+    background-color: #ffffff;
+    color: #222;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -15,75 +15,76 @@ body {
 ============================ */
 h1, h2, h3 {
     font-family: 'Georgia', serif;
-    margin-top: 1em;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
-    color: #4b2e1e;
+    color: #333;
+    font-weight: 500;
 }
 
 h1 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 2.2rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
-/* Subtitle class for section titles */
 .subtitle {
-    color: #5c4033;
+    color: #666;
     font-style: italic;
+    font-size: 1.2rem;
 }
 
 /* ============================
    Paragraphs & Links
 ============================ */
 p {
-    margin-bottom: 1em;
     font-size: 1rem;
+    margin-bottom: 1em;
 }
 
 a {
-    color: #d2691e;
-    text-decoration: none;
+    color: #444;
+    text-decoration: underline;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #000;
 }
 
 /* ============================
    Navigation Bar
 ============================ */
 .navbar {
-    background-color: #ffcc80;
-    padding: 10px;
     display: flex;
     justify-content: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fafafa;
 }
 
 .navbar a {
-    margin: 0 15px;
-    font-weight: bold;
-    color: #333;
+    margin: 0 12px;
+    font-weight: 500;
+    color: #222;
+    text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #ff6600;
+    color: #555;
 }
 
 /* ============================
-   Content Wrapper
+   Layout Container
 ============================ */
 .center-content {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
@@ -100,45 +101,45 @@ a:hover {
 
 .flexbox-item {
     flex: 1 1 300px;
-    padding: 15px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background-color: #fafafa;
     text-align: left;
 }
 
 /* ============================
-   Images
+   Image Styling
 ============================ */
 .responsive-img {
     max-width: 100%;
     height: auto;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 /* ============================
    Lists
 ============================ */
 ul, ol {
-    padding-left: 30px;
+    padding-left: 1.5rem;
     text-align: left;
     margin: 1em 0;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
 }
 
 /* ============================
-   Ingredients, Instructions
+   Sections
 ============================ */
 #ingredients, #instructions {
-    text-align: left;
-    padding: 1em 1.5em;
-    background-color: #fff3e0;
-    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 6px;
     margin: 2em 0;
-    border-left: 4px solid #f4a460;
+    text-align: left;
+    background-color: #fcfcfc;
 }
 
 /* ============================
@@ -154,31 +155,29 @@ table {
     border-collapse: collapse;
     width: 100%;
     max-width: 500px;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.95rem;
 }
 
 th, td {
     border: 1px solid #ddd;
-    padding: 12px 15px;
+    padding: 10px;
     text-align: center;
-    font-size: 1rem;
 }
 
 th {
-    background-color: #f4a460;
-    color: white;
+    background-color: #f2f2f2;
+    font-weight: 600;
 }
 
 /* ============================
    Tips Section
 ============================ */
 #tips {
-    background-color: #fff8e1;
-    border-left: 6px solid #ffc107;
-    padding: 15px;
-    margin-top: 30px;
+    border-left: 3px solid #ccc;
+    padding: 1rem;
+    margin-top: 2rem;
     font-style: italic;
+    background-color: #f9f9f9;
 }
 
 /* ============================
@@ -195,10 +194,10 @@ th {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }

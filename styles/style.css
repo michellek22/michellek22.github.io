@@ -16,31 +16,31 @@ body {
 h1, h2, h3 {
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    font-weight: bold;
     font-family: 'Arial Black', Arial, sans-serif;
+    font-weight: bold;
     letter-spacing: 1px;
 }
 
 h1 {
     font-size: 2.5rem;
-    color: #ff8c42; /* vibrant pancake orange */
     text-transform: uppercase;
+    color: #ff8c42; /* Vibrant pancake orange */
 }
 
 h2 {
     font-size: 1.8rem;
-    color: #ffac33; /* sunny yellow-orange */
+    color: #ffac33; /* Sunny yellow-orange */
 }
 
 h3 {
     font-size: 1.4rem;
-    color: #ffa07a; /* light coral */
+    color: #ffa07a; /* Light coral */
 }
 
 .subtitle {
-    color: #666;
-    font-style: italic;
     font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
 }
 
 /* ============================
@@ -69,7 +69,7 @@ a:hover {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    background-color: #ffe6b3; /* buttery yellow */
+    background-color: #ffe6b3; /* Buttery yellow */
     border-bottom: 3px solid #ffcc80;
     position: sticky;
     top: 0;
@@ -78,10 +78,10 @@ a:hover {
 
 .navbar a {
     margin: 0 15px;
-    font-weight: bold;
-    font-size: 1rem;
-    color: #333;
     padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
     border-radius: 8px;
     transition: background 0.3s ease;
 }
@@ -92,13 +92,25 @@ a:hover {
 }
 
 /* ============================
-   Main Container
+   Main Content Wrapper
 ============================ */
 .center-content {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
     text-align: center;
+}
+
+/* ============================
+   Hero Image
+============================ */
+.hero-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 2rem auto;
+    border-radius: 12px;
 }
 
 /* ============================
@@ -115,10 +127,10 @@ a:hover {
 .flexbox-item {
     flex: 1 1 300px;
     padding: 1.5rem;
+    text-align: left;
+    background-color: #fffaf4;
     border: 2px solid #ffdab9;
     border-radius: 12px;
-    background-color: #fffaf4;
-    text-align: left;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease;
 }
@@ -128,7 +140,7 @@ a:hover {
 }
 
 /* ============================
-   Image Styling
+   Responsive Images
 ============================ */
 .responsive-img {
     max-width: 100%;
@@ -141,8 +153,8 @@ a:hover {
 ============================ */
 ul, ol {
     padding-left: 1.5rem;
-    text-align: left;
     margin: 1em 0;
+    text-align: left;
 }
 
 li {
@@ -155,11 +167,11 @@ li {
 ============================ */
 #ingredients {
     padding: 2rem;
+    margin: 2em 0;
+    text-align: left;
     background-color: #fff0da;
     border: 2px dashed #ffb347;
     border-radius: 12px;
-    margin: 2em 0;
-    text-align: left;
 }
 
 /* ============================
@@ -167,15 +179,15 @@ li {
 ============================ */
 #instructions {
     padding: 2rem;
+    margin: 2em 0;
+    text-align: left;
     background-color: #ffe8d1;
     border: 2px dashed #ffa07a;
     border-radius: 12px;
-    margin: 2em 0;
-    text-align: left;
 }
 
 /* ============================
-   Table Styling
+   Nutrition Table
 ============================ */
 .table-container {
     display: flex;
@@ -184,10 +196,10 @@ li {
 }
 
 table {
-    border-collapse: collapse;
     width: 100%;
     max-width: 500px;
     font-size: 0.95rem;
+    border-collapse: collapse;
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
@@ -195,9 +207,9 @@ table {
 }
 
 th, td {
-    border: 1px solid #ffdab9;
     padding: 12px;
     text-align: center;
+    border: 1px solid #ffdab9;
 }
 
 th {
@@ -209,16 +221,16 @@ th {
    Tips Section
 ============================ */
 #tips {
-    background-color: #fff2dc;
-    border-left: 6px solid #f4a460;
     padding: 1.5rem;
     margin-top: 2rem;
     font-style: italic;
+    background-color: #fff2dc;
+    border-left: 6px solid #f4a460;
     border-radius: 8px;
 }
 
 /* ============================
-   Responsive
+   Responsive Design
 ============================ */
 @media screen and (max-width: 768px) {
     .flexbox-section {

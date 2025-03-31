@@ -48,8 +48,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem 1rem 1rem 1rem;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
     background-color: #fff0da;
     text-align: center;
 }
@@ -61,8 +61,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0;
+    gap: 0.3rem;
+    padding: 0;
+    text-align: center;
 }
 
 .hero-image {
@@ -91,9 +92,10 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     text-transform: uppercase;
-    margin-bottom: 0.3rem;
+    margin: 0.5rem 0 0.2rem 0;
+    line-height: 1.1;
 }
 
 h2 {
@@ -104,11 +106,14 @@ h3 {
     font-size: 1.4rem;
 }
 
+/* Subtitles (Not italic anymore) */
 .subtitle {
     font-size: 1.2rem;
-    font-style: italic;
-    color: #666;
-    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    color: #5e412f;
+    margin: 1rem 0 0.5rem;
+    text-align: center;
 }
 
 /* ============================

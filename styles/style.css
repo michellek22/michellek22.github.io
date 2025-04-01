@@ -296,6 +296,7 @@ body {
      Responsive Design
   ============================ */
   @media screen and (max-width: 768px) {
+    .flex-container,
     .flexbox-section,
     .hero-section {
       flex-direction: column;

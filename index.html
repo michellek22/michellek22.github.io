@@ -1,12 +1,9 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>WebComm Lab</title>
   <link rel="stylesheet" href="./styles/style.css" />
-
-  <script src="./script/script.js"></script>
-
 </head>
 
 <body>
@@ -123,7 +120,26 @@
       <p>Want more recipes? <a href="https://www.allrecipes.com/recipe/162760/fluffy-pancakes/" target="_blank">Click here</a> for more pancake goodness.</p>
     </div>
 
+    <!-- 🥞 JavaScript Interactions Section -->
+    <div style="padding: 2rem; text-align: center; background: #fff7ec; border-top: 2px dashed #ffb347; margin-top: 2rem;">
+      <h2>🍽️ Pancake Interactions</h2>
+
+      <button id="alertMe">What's the secret ingredient?</button>
+
+      <button id="hoverButton" style="margin: 0 10px;">Warm up the skillet 🔥</button>
+
+      <div style="margin-top: 1rem;">
+        <button id="buttonCounter">Flip the Pancake!</button>
+        <p id="counter">You've flipped 0 pancakes!</p>
+      </div>
+
+      <div id="container" style="margin-top: 2rem;"></div>
+    </div>
+
   </div>
 
+  <!-- Linked JS file -->
+  <script src="./script/script.js" defer></script>
 </body>
+
 </html>
